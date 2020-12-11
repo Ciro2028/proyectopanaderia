@@ -1,0 +1,62 @@
+
+
+.header{
+
+    background: aquamarine;
+    
+}
+
+h1{
+    color: azure;
+}
+
+.footer{
+
+    background: darkcyan;
+    
+}
+
+.article1{
+    background: chocolate;
+    
+}
+
+.article3{
+    background: cornflowerblue;
+
+}
+.article5{
+    background: green;
+}
+
+.article11{
+    background: chocolate;
+    
+}
+.article13{
+    background: cornflowerblue;
+
+}
+
+.article17{
+    background: green;
+}
+.article2 p{
+    color: crimson;
+    text-shadow: 1px 2px #999;
+}
+
+
+
+.article1 p{
+    text-align: right;
+}
+
+.article3 p{
+    text-align: justify;
+}
+
+.container{
+    padding-top: 10px;
+    
+}

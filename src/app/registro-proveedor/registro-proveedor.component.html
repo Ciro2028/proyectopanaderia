@@ -1,0 +1,106 @@
+<div class="container">
+ 
+    <div class="starter-template">
+  
+      <div class="row">       
+  
+        <div class="col-md-12 mt-5">
+  
+           <h1>REGISTRO DE PROVEEDORES </h1>
+           
+           <br>
+           <h2></h2>
+  
+           <br>
+
+          <form [formGroup]="contacto" (ngSubmit)="onSubmit()">
+              <div class="form-group">
+                       <label>Nombres y Apellidos</label>
+                       <input type="text" formControlName="nombre" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.nombre.errors }" />
+                       <div *ngIf="submitted && f.nombre.errors" class="invalid-feedback">
+                           <div *ngIf="f.nombre.errors.required">Por favor, ingresa tus Nombres y Apellidos</div>
+                       </div>
+                   </div> 
+  
+                   <div class="form-group">
+                    <label>Cedula</label>
+                    <input type="text" formControlName="cedula" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.cedula.errors }" />
+                    <div *ngIf="submitted && f.cedula.errors" class="invalid-feedback">
+                        <div *ngIf="f.cedula.errors.required">La cedula en obligatoria</div>
+                        <div *ngIf="f.cedula.errors.compose">La cedula debe ser valida entre 6 a 9 digitos</div>
+                        <div *ngIf="f.cedula.errors.pattern">Por favor, Digite solo numeros</div>
+                        
+                    </div>
+                </div>
+  
+                   <div class="form-group">
+                       <label>Email</label>
+                       <input type="text" formControlName="email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+                       <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                           <div *ngIf="f.email.errors.required">El email es obligatorio</div>
+                           <div *ngIf="f.email.errors.email">Por favor, ingresa tu Email</div>
+                       </div>
+                   </div>
+  
+                   <div class="form-group">
+                       <label>Clave</label>
+                       <input type="text" formControlName="clave" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.clave.errors }" />
+                       <div *ngIf="submitted && f.clave.errors" class="invalid-feedback">
+                           <div *ngIf="f.clave.errors.required">Por favor, ingresa la clave</div>
+                           <div *ngIf="f.clave.errors.minLength">Por favor, la clave debe tener mas de 6 numeros</div>
+                           <div *ngIf="f.clave.errors.pattern">Por favor, solo digite numeros</div>
+                       </div>
+                   </div>
+  
+                   <div class="form-group">
+                    <label>Direccion</label>
+                    <input type="text" formControlName="direccion" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.direccion.errors }" />
+                    <div *ngIf="submitted && f.direccion.errors" class="invalid-feedback">
+                        <div *ngIf="f.direccion.errors.required">Por favor, ingresa la Direccion</div>
+                        
+                    </div>
+                </div>
+  
+                <div class="form-group">
+                  <label>Ciudad</label>
+                  <input type="text" formControlName="ciudad" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.ciudad.errors }" />
+                  <div *ngIf="submitted && f.ciudad.errors" class="invalid-feedback">
+                      <div *ngIf="f.ciudad.errors.required">Por favor, ingresa la Ciudad</div>
+                      
+                  </div>
+              </div>
+  
+              <div class="form-group">
+                <label>Pais</label>
+                <input type="text" formControlName="pais" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.pais.errors }" />
+                <div *ngIf="submitted && f.pais.errors" class="invalid-feedback">
+                    <div *ngIf="f.pais.errors.required">Por favor, ingresa el pais</div>
+                    
+                </div>
+             </div>
+
+             <div class="form-group">
+                <label>Telefono</label>
+                <input type="text" formControlName="telefono" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.telefono.errors }" />
+                <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                    <div *ngIf="f.telefono.errors.required">El numero de telefono es obligatorio</div>
+                    <div *ngIf="f.telefono.errors.pattern">Por favor, ingresa solo numeros</div>
+                </div>
+            </div>
+  
+                   
+  
+                   <div class="form-group">
+                       <button class="btn btn-primary">Aceptar</button>
+                   </div>
+  
+          </form>
+  
+        </div>  
+  
+  
+      </div>
+  
+    </div>
+  
+  </div>

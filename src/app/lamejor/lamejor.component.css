@@ -1,0 +1,101 @@
+.contenedor-lamejor{
+    position: relative;
+    margin: auto;
+    width: 1900px;
+    height: 700px;
+    padding: 5px 10px;
+    z-index: -1;
+    background-image: url(src/assets/imagenes/lamejor.jpg);
+    
+    }
+    
+    h1{
+        text-align: center;
+        color: rosybrown;
+        font-size: 20px;
+    }
+    
+    
+    h2 {
+    
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .contenedor-lamejor h1 {
+        position: absolute;
+        top: 300px;
+        left: 200px;
+        font-size: 80px;
+        color: gray;
+        
+    }
+
+    .contenedor-reseña{
+
+        width: 100%;
+        height: 700px;
+        margin: auto;
+        display: inline-block;
+        padding-top: 20px;
+        
+    }
+    
+    
+    .contenedor-main{
+        width: 100%;
+        margin: auto;
+        overflow: hidden;
+        
+        
+    }
+    
+    .contenedor-main1{
+        width: 90%;
+        margin: auto;
+        overflow: hidden;
+    }
+    
+    
+    
+    .contenedor-columna {
+        width: 24.5%;
+        display: inline-block;
+        padding: 40px 40px;
+        margin-bottom: 10PX;
+        margin: 2%;
+    
+    }
+    
+    .contenedor-columna img{
+        width: 400px;
+        height: 650px;
+    }
+    
+    .contenedor-columna p {
+    
+        font-size: 28px;
+        text-align: justify;
+    }
+    .contenedor-columna li {
+    
+        font-size: 28px;
+        text-align: justify;
+    }
+    
+    .contenedor-columna1 {
+        width: 40%;
+        float: left;
+        margin: 2%;
+        margin-top: none;
+        padding-left: 100px;
+    
+    }
+    
+    
+    .contenedor-columna1 p {
+    
+        font-size: 28px;
+        text-align: justify;
+    }
+    

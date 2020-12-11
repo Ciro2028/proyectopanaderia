@@ -1,0 +1,45 @@
+header {
+    width: 100%;
+    overflow: hidden;
+    background: #252932;
+    margin-bottom: 20px;
+}
+
+header .logo {
+    
+    line-height: 50px;
+    float: left;
+    padding-top: 20px;
+    
+}
+
+header nav {
+
+    float: right;
+    line-height: 50px;
+    padding-top: 30px;
+}
+
+
+
+
+header nav a{
+    display: inline-block;
+    text-decoration: none;
+    line-height: normal;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    padding: 10px 20px;
+}
+header nav a:hover{
+    background: #10FCE7;
+    border-radius: 50px;
+}
+
+.wrapper{
+    width: 90%;
+    max-width: 1800px;
+    margin: auto;
+    overflow: hidden;
+}
